@@ -1,0 +1,200 @@
+<!-- Objective: Create an automatic image slideshow. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="back">Back</button>
+    <div>
+        <img src="images1.jpg" height="300px" width="300px" id="image">
+    </div>
+    <button id="next">Next</button>
+
+    <script>
+        // var a[]=array of images
+        const images = ["images1.jpg", "images2.jpg", "images3.jpg", "images4.jpg"];
+        let imagecontainer = document.getElementById("image");
+        let count = 0;
+        let back = document.getElementById("back");
+        let next = document.getElementById("next");
+        back.addEventListener('click', (event) => {
+            count--;
+            if (count < 0) {
+                count = images.length - 1;
+            }
+            imagecontainer.src = images[count];
+            //apply decrement count and set img by count value 
+        });
+
+        setInterval(() => {
+            count++;
+            if (count >= images.length) {
+                count = 0;
+            }
+            imagecontainer.src = images[count];
+        }, 3000);
+
+        next.addEventListener('click', (event) => {
+            count++;
+
+            if (count >= images.length) {
+                count = 0;
+            }
+            imagecontainer.src = images[count];
+            //apply increment count and set img by count value 
+        });
+
+    </script>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollEvent</title>
+    <script>
+        window.addEventListener('scroll',()=>{
+            if(document.documentElement.scrollHeight<=window.innerHeight+window.scrollY){
+                alert("You have reached max height")
+            }
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+       
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+            beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime minima consequatur omnis tenetur officia 
+                beatae eius quibusdam minus laborum, voluptates quasi doloribus recusandae labore accusantium, eos aliquam quos ea itaque!
+            
+        </p>
+    </div>
+</body>
+</html> -->
+
